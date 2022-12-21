@@ -11,28 +11,7 @@
      background-size: cover;
     }
 
-    .header-div>ul  {
-       
-        padding:20px;
-        margin: bottom 5%;
-        position: sticky;
-        top: 0;
-        }
-
-        ul, a {
-            display: flex;
-            text-decoration: none;
-            text-align: center;
-            padding-right: 3em;
-            font-size:x-large;
-        color: rgb(206, 193, 168);
-        
-        }
-         ul, a:hover {
-
-            color:rgb(19, 80, 4);
-
-         }
+    
 .Forma 
 {
     display: flex;

@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +28,8 @@
         </div>
     <Div class="Forma">
     <div class="centralni">
-    <form method action="Post">
-<h1 class="pozdrav">Dobro došli </h1>
+   
+<h1 class="pozdrav"> KLUPKO </h1>
 <br> <br>
 <div class="slika">
 <img src="images/slika forma.png" width="300px" height="300px">
@@ -34,12 +38,12 @@
 
 <br> <br> <br>
 
-</form>
 
-            <input type="text" name="username" placeholder="Korisničko ime" id="username">
+         <form  action ="welcome.php" method="POST">
+            <input type="text" name="username" placeholder="Korisničko ime" id="username" >
        <br><br>
     
-         <input type="password" name="password" placeholder="Lozinka" id="password">
+         <input type="password" name="password" placeholder="Lozinka" id="password" >
       <br><br>
         <button class="pošalji">Pošalji</button>
     </form>
