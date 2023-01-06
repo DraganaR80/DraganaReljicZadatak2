@@ -24,7 +24,8 @@ $password = " admin";
 </head>
 <body>
     <div  class="header-div">
-    <h2> Dobro došli u našu prodavnicu!</h2>
+    <h2> KLUPKO  NOVI SAD <br>
+ON-LINE PRODAVNICA VUNICE I KONCA</h2>
     <img src="images/slide.jpg"  width="350px" height="100px">
     <div>
     <a href="#" class="fa fa-facebook"></a>

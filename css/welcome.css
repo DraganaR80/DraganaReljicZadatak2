@@ -79,3 +79,10 @@ width : 20%;
 95%   { left: -300%;}
 100%   { left:-400%;}
     }
+    .Kontakt {
+   
+      background-color: rgb(95, 66, 80);
+      padding: 100px;
+      margin-top: 20px;
+      font-size: large ;
+    }
