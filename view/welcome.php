@@ -1,16 +1,4 @@
-//<?php
 
-
-//session_start();
-//$username = "admin";
-//$password = " admin";
-
-
-  //  if (isset($_POST['username']) && isset($_POST['password']))  {
-   //     $_SESSION['username'] = $username;
-       
-//}
-//?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +36,41 @@ ON-LINE PRODAVNICA VUNICE I KONCA</h2>
 
     </div>
     <br><br>
+    <div class="tabela"> 
+
+<table>
+<?php
+
+include_once "../model/objekti.php";
+$proizvodi= $_SESSION["proizvodi"];
+foreach($proizvodi as $p):
+?>
+    <tr>
+<th>Proizvod</th>
+<th> Proizvođač</th>
+<th> Sastav</th>
+<th> Cena</th>
+</tr>
+<tr>
+  <td><?php echo $p->naziv ?></td>
+  <td><?php echo $p->proizvođač ?></td>
+  <td><?php echo $p-> sastav ?></td>
+  <td><?php echo $p->cena ?></td>
+  </tr>
+
+
+
+<?php
+endforeach;
+?>
+</table>
+
+
+
+
+
+
+    </div>
     <div class="Kontakt">
 
     <p>

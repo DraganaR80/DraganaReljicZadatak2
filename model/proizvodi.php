@@ -1,20 +1,21 @@
 <?php
 
 
- class Proizvodi{
+ class Ponuda {
 
-    private $id;
-    private $naziv;
-    private$proizvođač;
-    private $sastav;
-    private $metraža;
-    private $količina;
-    private $cena;
+    protected $id;
+    protected $naziv;
+    protected$proizvođač;
+    protected $sastav;
+    protected $metraža;
+    protected $količina;
+    protected$cena;
 
 public function __construct($id,$naziv,$proizvođač,$sastav,$metraža,$količina,$cena)
 {
        
         $this->id = $id;
+        $this->naziv = $naziv;
         $this->proizvođač = $proizvođač;
         $this->sastav = $sastav;
         $this->metraža= $metraža;
