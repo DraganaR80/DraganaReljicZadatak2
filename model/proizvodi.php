@@ -3,23 +3,23 @@
 
  class Ponuda {
 
-    protected $id;
-    protected $naziv;
-    protected$proizvođač;
-    protected $sastav;
-    protected $metraža;
-    protected $količina;
-    protected$cena;
+    private $id;
+    private $naziv;
+    private $proizvodjac;
+    private $sastav;
+    private $metraza;
+    private $kolicina;
+    private$cena;
 
-public function __construct($id,$naziv,$proizvođač,$sastav,$metraža,$količina,$cena)
+public function __construct($id,$naziv,$proizvodjac,$sastav,$metraza,$kolicina,$cena)
 {
        
         $this->id = $id;
         $this->naziv = $naziv;
-        $this->proizvođač = $proizvođač;
+        $this->proizvodjac = $proizvodjac;
         $this->sastav = $sastav;
-        $this->metraža= $metraža;
-        $this->količina = $količina;
+        $this->metraza= $metraza;
+        $this->kolicina = $kolicina;
         $this->cena = $cena;
 }
 
@@ -35,13 +35,13 @@ public function setId($id) {
 
 
 
-	public function getKoličina() {
-		return $this->količina;
+	public function getKolicina() {
+		return $this->kolicina;
 	}
 	
 	
-	public function setKoličina($količina) {
-		$this->količina = $količina;
+	public function setKolicina($kolicina) {
+		$this->kolicina = $kolicina;
 		return $this;
 	}
 
@@ -55,14 +55,22 @@ public function setId($id) {
 		$this->naziv = $naziv;
 		return $this;
 	}
-
-	public function getMetraža() {
-        return $this->metraža;
+    public function getProizvodjac() {
+        return $this->proizvodjac;
     }
     
     
-    public function setMetraža($metraža) {
-        $this->metraža = $metraža;
+    public function setProizvodjac($proizvodjac) {
+        $this->proizvodjac = $proizvodjac;
+        return $this;
+    }
+	public function getMetraza() {
+        return $this->metraza;
+    }
+    
+    
+    public function setMetraza($metraza) {
+        $this->metraza = $metraza;
         return $this;
     }
 	public function getSastav() {

@@ -79,10 +79,37 @@ width : 20%;
 95%   { left: -300%;}
 100%   { left:-400%;}
     }
-    .Kontakt {
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      padding: top 5% , bottom 5%;
+    }
+    
+    th, td {
+      text-align: left;
+      font-size: large;
+      padding: 8px;
+    }
+    
+    tr:nth-child(odd) {
+      background-color:rgba(95, 66, 80, 0.719);
+    }
+    
+    .wrapper {
    
       background-color: rgb(95, 66, 80);
-      padding: 80px;
-      margin-top: 20px;
+      padding: 15%;
+      margin-top: 5%;
       font-size: large ;
     }
+
+   .Kontakt{
+
+    float:left ;
+   }
+
+   .mapa {
+
+    float: right;
+   }
