@@ -1,25 +1,25 @@
 <?php
-require "model/interface.php";
-require "model/vunica.php";
-require "model/drske_za_torbe.php";
-require "model/heklice.php";
-
-abstract class Proizvodi{
-
-    protected $id;
-    protected $naziv;
-    protected $proizvođač;
-    protected $sastav;
-    protected $količina;
 
 
-public function __construct($id,$naziv,$proizvođač,$sastav,$količina)
+ class Proizvodi{
+
+    private $id;
+    private $naziv;
+    private$proizvođač;
+    private $sastav;
+    private $metraža;
+    private $količina;
+    private $cena;
+
+public function __construct($id,$naziv,$proizvođač,$sastav,$metraža,$količina,$cena)
 {
        
         $this->id = $id;
         $this->proizvođač = $proizvođač;
         $this->sastav = $sastav;
+        $this->metraža= $metraža;
         $this->količina = $količina;
+        $this->cena = $cena;
 }
 
 public function getId() {
@@ -27,10 +27,11 @@ public function getId() {
 }
 
 
-public function setId($id): self {
+public function setId($id) {
     $this->id = $id;
     return $this;
 }
+
 
 
 	public function getKoličina() {
@@ -38,7 +39,7 @@ public function setId($id): self {
 	}
 	
 	
-	public function setKoličina($količina): self {
+	public function setKoličina($količina) {
 		$this->količina = $količina;
 		return $this;
 	}
@@ -49,21 +50,40 @@ public function setId($id): self {
 	}
 	
 	
-	public function setNaziv($naziv): self {
+	public function setNaziv($naziv) {
 		$this->naziv = $naziv;
 		return $this;
 	}
 
-	
+	public function getMetraža() {
+        return $this->metraža;
+    }
+    
+    
+    public function setMetraža($metraža) {
+        $this->metraža = $metraža;
+        return $this;
+    }
 	public function getSastav() {
 		return $this->sastav;
 	}
 	
 	
-	public function setSastav($sastav): self {
+	public function setSastav($sastav) {
 		$this->sastav = $sastav;
 		return $this;
 	}
+
+    public function getCena() {
+        return $this->cena;
+    }
+    
+    
+    public function setCena($cena) {
+        $this->cena = $cena;
+        return $this;
+    }
+    
 }
 
 

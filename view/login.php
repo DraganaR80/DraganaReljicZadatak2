@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Prodavnica vunice </title>
 </head>
 <body>
@@ -32,7 +32,7 @@
 <h1 class="pozdrav"> KLUPKO </h1>
 <br> <br>
 <div class="slika">
-<img src="images/slika forma.png" width="300px" height="300px">
+<img src="../images/slika forma.png" width="300px" height="300px">
 
 </div>
 
@@ -50,12 +50,29 @@
     </div>
     </div>
 
-
-
-
-
-
-
-    </Div>
+ </Div>
 </body>
 </html>
+<?php
+include "../podaciKorisnika.php";
+
+
+
+    if (isset($_POST["login"])) {
+        if ($_POST["username"] == "" || $_POST["password"] == "") {
+            echo "Morate uneti ime i sifru";
+        } else {
+            foreach ($_SESSION["korisnici"] as $korisnik) {
+                if ($korisnik->getIme() == $_POST["ime"] && $korisnik->getPassword() == $_POST["password"]) {
+                    $_SESSION["logovani_korisnik"] = $korisnik;
+                    
+                    break;
+                } else {
+                    echo "Korisnik ne postoji";
+                }
+            }
+        }
+    }
+
+
+?>
