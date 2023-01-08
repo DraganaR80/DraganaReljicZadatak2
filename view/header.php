@@ -23,5 +23,17 @@ ON-LINE PRODAVNICA VUNICE I KONCA</h2>
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-instagram"></a>
     <a href="#" class="fa fa-pinterest"></a>
-    </div>
+     </div>
+
+     <div class="return">
+    <form action="view/welcome.php" method="post">
+        <input type="submit" value="Vrati se na prethodnu stranicu" name="return" id="return"> 
+    </form>
+</div>
+
+     <div class="logout">
+    <form action="view/logout.php" method="post">
+        <input type="submit" value="Odjavi se" name="logout" id="logout"> 
+    </form>
+</div>
     </div>
