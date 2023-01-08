@@ -1,0 +1,29 @@
+* {
+margin: 0%;
+padding: 0%;
+background-image: "../images/order.jpeg";
+background-color: rgb(95, 66, 80) ;
+}
+
+.image{
+position: absolute;
+
+}
+.header-div{
+    background-color: rgb(95, 66, 80) ;
+   
+}
+
+
+.tabela{
+
+border: solid 3px;
+color: aliceblue;
+font-size: large;
+}
+
+.tabela{
+float: right;
+margin-right: 50px;
+background-color: rgb(95, 66, 80) ;
+}
