@@ -1,6 +1,6 @@
 <?php
 
-class Administrator extends opstiKorisnik
+class Administrator extends OpstiKorisnik
 {
 
 

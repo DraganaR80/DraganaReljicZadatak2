@@ -1,6 +1,18 @@
-<?php 
+<?php
+//session_start();
+$username="admin";
+$password = "admin";
+if(isset($_SESSION['korisnici'])){
 
-include "header.php"?>
+}else {
+    if($_POST['username']==$username   && $_POST['password']==$password);
+}
+
+include "header.php"
+
+
+
+?>
 
     <div   class="slide">
       <figure>

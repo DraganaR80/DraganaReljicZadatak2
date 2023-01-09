@@ -41,7 +41,7 @@
         
         border-radius: 10px;
     }
-    .pošalji {
+    .submit {
    background-color: gray;
     color: rgb(17, 17, 17);
     padding: 14px 20px;
@@ -54,7 +54,7 @@
    
     font-size: x-large;
 }
-.pošalji:hover {
+.submit:hover {
     letter-spacing: 1px;
 }
 .slika {

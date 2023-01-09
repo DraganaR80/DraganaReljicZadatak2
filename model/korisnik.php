@@ -1,6 +1,7 @@
 <?php
 
-class Korisnik extends opstiKorisnik
+
+class Korisnik extends OpstiKorisnik
 {
     public function __construct($ime, $prezime, $username, $password,  $tip)
     {

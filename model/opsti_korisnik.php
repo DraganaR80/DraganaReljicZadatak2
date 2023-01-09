@@ -1,6 +1,6 @@
 <?php
 
-abstract class opstiKorisnik{
+abstract class OpstiKorisnik{
     
 
     protected $ime;
@@ -29,7 +29,7 @@ abstract class opstiKorisnik{
     abstract public function setPassword($password);
    
     abstract public function getTip();
-    abstract public function setTip($tipkorisnika);
+    abstract public function setTip($tip);
 }
 
 ?>

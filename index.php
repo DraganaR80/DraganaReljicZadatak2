@@ -1,31 +1,28 @@
 <?php
 
-include_once "../model/podaciKorisnika.php";
+// NE RADI ONO STO JE PLANIRANO!
+//include "PodaciKorisnika.php";
 
 
 
-    if (isset($_POST["login"])) {
-        if ($_POST["username"] == "" || $_POST["password"] == "") {
-           
-        } else {
-            foreach ($_SESSION["korisnici"] as $korisnik) {
-                if ($korisnik->getIme() == $_POST["ime"] && $korisnik->getPassword() == $_POST["password"]) {
-                    $_SESSION["logovani_korisnik"] = $korisnik;
-                    
+//if (!isset($_SESSION["logovani_korisnik"])) {
+  //  header("Location: view/login.php");
+//} else if (
+   // $korisnik = $_SESSION["logovani_korisnik"]
+//) {
 
-                } else {
-                    echo "Korisnik ne postoji";
-                }
-            }
-        }
-    }
+   // if ($korisnik->getTip() == "user") {
+  //  include "view/welcome.php";
+    //exit();
+   // } else if ($korisnik->getTip() == "admin") {
+   // include "view/administrator.php";
+    //exit();
+//} else {
+  //  echo "404";
+    //exit();
+//}
 
-
-?>
-
-
-
-
+//?>
 
 
 

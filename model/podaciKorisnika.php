@@ -1,10 +1,11 @@
 <?php
-include "login.php";
-include "model/opsti_korisnik.php";
-include "model/admin.php";
-include "model/korisnik.php";
-
 session_start();
+
+include "Opsti_korisnik.php";
+include "Admin.php";
+include "Korisnik.php";
+
+
 $admin = new Administrator('pera', 'peric', 'admin', 'admin',  'admin');
 
 $user1 = new Korisnik('Dragana', 'Reljic', 'Gagana', 'dragana80', 'user');

@@ -1,6 +1,6 @@
 <?php
 
-include_once "proizvodi.php";
+include_once "Proizvodi.php";
 
 session_start();
 

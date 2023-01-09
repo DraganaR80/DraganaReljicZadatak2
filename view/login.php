@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,13 +26,13 @@
 <br> <br> <br>
 
 
-         <form  action ="welcome.php" method="POST">
-            <input type="text" name="username" placeholder="Korisničko ime" id="username" >
+<form class="login" method="POST" action="welcome.php">
+            <input type="text" name="username" placeholder="Korisničko ime" id="username" required>
        <br><br>
     
-         <input type="password" name="password" placeholder="Lozinka" id="password" >
+         <input type="password" name="password" placeholder="Lozinka" id="password" required >
       <br><br>
-        <button class="pošalji">Pošalji</button>
+      <button class="submit" type="submit" name="login" id="login">Posalji</button>
     </form>
     </div>
     </div>
@@ -43,3 +40,28 @@
  </Div>
 </body>
 </html>
+//<?php
+
+
+// NE RADI ONO STO BI TREBALO
+//if (isset($_SESSION["logovani_korisnik"])) {
+  //  header("Location:../");
+//} else {
+  //  if (isset($_POST["login"])) {
+    //    if ($_POST["username"] == "" || $_POST["password"] == "") {
+      //      echo "Morate uneti ime i sifru";
+        //} else {
+          //  foreach ($_SESSION["users"] as $korisnik) {
+            //    if ($korisnik->getUsername() == $_POST["username"] && $korisnik->getPassword() == $_POST["password"]) {
+                  //  session_start();
+                    //$_SESSION["logovani_korisnik"] = $korisnik;
+                
+                   // header("Location:../");
+                   // exit();
+                //} else {
+                  //  echo "Korisnik ne postoji";
+               // }
+           // }
+       // }
+   // }
+//}
