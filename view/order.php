@@ -39,14 +39,21 @@ endforeach;
 ?>
 </table>
  </div>
-
-
-
-
-
-
-
-
-
-
 </div>
+<?php 
+include_once "../model/Objekti.php";
+include_once " ../model/Cart.php";
+include_once " ../model/CartItems.php";
+$cart = new Cart();
+$cartItem1 = $cart->addP($p1, 1);
+$cartItem2 = $product2->addToCart($cart, 1);
+
+
+echo "Total price of items in cart: ";
+echo $cart->getTotalSum();
+
+
+
+
+
+?>
